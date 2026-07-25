@@ -17,3 +17,5 @@ FROM Person.Person;
 -- Selecionar as 10 primeiras pessoas
 SELECT TOP (10) *
 FROM Person.Person;
+
+MMM
