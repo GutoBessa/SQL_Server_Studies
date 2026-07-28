@@ -9,9 +9,10 @@ Este repositório contém meus estudos de SQL Server.
 ## Conteúdo
 
 - [x] SELECT
+- [x] DISTINCT
 - [ ] WHERE
 - [ ] ORDER BY
-- [ ] GROUP BY
+- [ ] GROUP BYEX
 - [ ] JOINS
 - [ ] VIEWS
 - [ ] STORED PROCEDURES
