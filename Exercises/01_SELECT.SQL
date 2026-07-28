@@ -18,4 +18,13 @@ FROM Person.Person;
 SELECT TOP (10) *
 FROM Person.Person;
 
-MMM
+/* #EXERCÍCIO 01#
+
+A equipe de marketing precisa de fazer uma pesquisa 
+sobre nommes mais comuns de seus clientes e precisa do 
+nome e sobrenome de todos os clientes que estão na 
+lista cadastrado no sistema, desenvolva a formula...
+
+R: Foram usadas as formulas as formulas acima.
+
+ */
