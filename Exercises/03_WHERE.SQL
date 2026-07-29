@@ -3,7 +3,7 @@
 Aula 03 - WHERE
 Banco: AdventureWorks2017
 Data: 29/07/2026
-Causa e efeito: Coleta de dados específcos único no sistema.
+Causa e efeito: Coleta de grupo dados específcos com algumas similaridades.
 =========================================
 */
 
