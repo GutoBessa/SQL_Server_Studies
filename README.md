@@ -10,7 +10,7 @@ Este repositório contém meus estudos de SQL Server.
 
 - [x] SELECT
 - [x] DISTINCT
-- [ ] WHERE
+- [x] WHERE
 - [ ] ORDER BY
 - [ ] GROUP BYEX
 - [ ] JOINS

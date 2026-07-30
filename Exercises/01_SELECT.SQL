@@ -3,6 +3,7 @@
 Aula 01 - SELECT
 Banco: AdventureWorks2017
 Data: 25/07/2026
+Causa e efeito: Selecionar a pasta e a lista, dando inicio a verificação de dados.
 =========================================
 */
 
