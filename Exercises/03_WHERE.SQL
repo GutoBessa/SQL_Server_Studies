@@ -46,19 +46,39 @@ SELECT *
 FROM production.product
 WHERE color = 'blue' or color = 'black'
 
-/*Selecionar um grupo de dados entre dois tipo de valores especificos usando operadores lógicos:*/
+--Selecionar um grupo de dados entre dois tipo de valores especificos usando operadores lógicos:*/
+
+--Comparação Matematica:
+
+SELECT *
+FROM production.product
+WHERE ListPrice > 1500 and ListPrice < 5000
 
 
-/* #EXERCÍCIO 03#
+-- #EXERCÍCIOS 03#
 
-A equipe de produção precisa do nome de todas as peças que tem o peso de 500kg mas não mais 
+/*A equipe de produção precisa do nome de todas as peças que tem o peso de 500kg mas não mais 
 que 700kg para inspeção, desenvolva a formula:
 
  R: 
 
 Foi pedido pelo marketing uma relação de todos os empregados (employes)
-que são casados (married) e asaláriados (salaried)
+que são casados (married) e asaláriados (salaried):
 
 R:
 
-  */
+Um usuário chamado Peter Krebs está devendo um pagamento, consiga o email dele para que possamos enviar 
+uma cobrança:
+
+*/
+
+SELECT *
+FROM person.person
+WHERE LastName = 'krebs' and FirstName = 'Peter'
+
+SELECT *
+FROM person.EmailAddress
+WHERE EmailAddressID = '26'
+
+-- Pesquisamos pelo nome e sobrenome do cliente, e la coletamos a informação do ID, assim batendo todas as outras informações.
+
