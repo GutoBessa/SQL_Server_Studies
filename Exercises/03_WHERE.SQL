@@ -21,16 +21,32 @@ OR               OPERADOR LÓGICO OU
 */
 
 
--- Selecionar grupo de dados especificos de uma coluna:
+/*
+Selecionar grupo de dados especificos de uma coluna, no caso abaixo, sobrenome "miller", retornando
+-- mais de um dado com seus componentes:
+*/
 SELECT *
-FROM Production.Product
-WHERE color <> "red"
+FROM person.person
+WHERE LastName = 'miller'
 
--- Selecionar um grupo de dados entre dois tipo de valores especificos usando 
--- operadores lógicos:
+
+/*
+Usando o mesmo caso, digamos que queremos que o sistema procure mais detalhado, então conseguimos acresentar
+FirtName "anna", como complemento e adicionamos a pasta tambem:
+*/
+
 
 SELECT *
-FROM ListPrice > 1500 and ListPrice < 5000
+FROM person.person
+WHERE LastName = 'miller' and FirstName = 'anna'
+
+--Outro exemplo:
+
+SELECT *
+FROM production.product
+WHERE color = 'blue' or color = 'black'
+
+/*Selecionar um grupo de dados entre dois tipo de valores especificos usando operadores lógicos:*/
 
 
 /* #EXERCÍCIO 03#
