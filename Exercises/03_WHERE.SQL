@@ -18,10 +18,8 @@ OPERADOR    -    DESCRIÇÃO
 AND              OPERADOR LÓGICO + 
 OR               OPERADOR LÓGICO OU
 
-*/
 
 
-/*
 Selecionar grupo de dados especificos de uma coluna, sobrenome "miller", retornando
 mais de um dado com seus componentes, veja o exemplo:
 
@@ -29,7 +27,6 @@ mais de um dado com seus componentes, veja o exemplo:
 SELECT *
 FROM person.person
 WHERE LastName = 'miller'
-
 
 /*
 Usando o mesmo caso, digamos que queremos que o sistema procure mais detalhado, então conseguimos acresentar
@@ -46,8 +43,6 @@ SELECT *
 FROM production.product
 WHERE color = 'blue' or color = 'black'
 
-
-
 --Comparação Matematica:
 
 SELECT *                                        --> Selecionar um grupo de dados entre dois tipo 
@@ -60,36 +55,28 @@ WHERE ListPrice > 1500 and ListPrice < 5000
 /*A equipe de produção precisa do nome de todas as peças que tem o peso de 500kg mas não mais 
 que 700kg para inspeção, desenvolva a formula:
 
- R: 
- */
+ R:*/
  
 SELECT *                              --> 'WHERE' foi usado como parametro entre 2 pesos distintos, assim o 
 FROM Production.Product               -- sistema devolveu o resultado com itens somente entre os dois valores.
 WHERE Weight > 500 and Weight < 700
-
-
 
  /*
 
 Foi pedido pelo marketing uma relação de todos os empregados (employes)
 que são casados (married) e asaláriados (salaried):
 
-R:
-
-*/
-
+R:*/
 
 SELECT *                                             --> Foi listado todos os empregados casados com a referência 'M'
 FROM HumanResources.Employee                         -- que significa 'married' e a referência '0' questões binárias
 WHERE MaritalStatus = 'M' and SalariedFlag = '0'     -- significa positivo (são assalariados).
 
-
-
 /*
 Um usuário chamado Peter Krebs está devendo um pagamento, consiga o email dele para que possamos enviar 
 uma cobrança:
 
-*/
+R:*/
 
 SELECT *
 FROM person.person
