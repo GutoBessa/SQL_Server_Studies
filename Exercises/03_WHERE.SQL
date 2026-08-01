@@ -22,8 +22,9 @@ OR               OPERADOR LÓGICO OU
 
 
 /*
-Selecionar grupo de dados especificos de uma coluna, no caso abaixo, sobrenome "miller", retornando
--- mais de um dado com seus componentes:
+Selecionar grupo de dados especificos de uma coluna, sobrenome "miller", retornando
+-- mais de um dado com seus componentes, veja o exemplo:
+
 */
 SELECT *
 FROM person.person
@@ -32,9 +33,8 @@ WHERE LastName = 'miller'
 
 /*
 Usando o mesmo caso, digamos que queremos que o sistema procure mais detalhado, então conseguimos acresentar
-FirtName "anna", como complemento e adicionamos a pasta tambem:
+FirtName "anna", como complemento e adicionamos a pasta tambem, veja o exemplo:
 */
-
 
 SELECT *
 FROM person.person
@@ -46,12 +46,12 @@ SELECT *
 FROM production.product
 WHERE color = 'blue' or color = 'black'
 
---Selecionar um grupo de dados entre dois tipo de valores especificos usando operadores lógicos:*/
+
 
 --Comparação Matematica:
 
-SELECT *
-FROM production.product
+SELECT *                                        --> Selecionar um grupo de dados entre dois tipo 
+FROM production.product                         -- de valores especificos usando operadores lógicos.
 WHERE ListPrice > 1500 and ListPrice < 5000
 
 
@@ -61,6 +61,15 @@ WHERE ListPrice > 1500 and ListPrice < 5000
 que 700kg para inspeção, desenvolva a formula:
 
  R: 
+ */
+ 
+SELECT *                              --> 'WHERE' foi usado como parametro entre 2 pesos distintos, assim o 
+FROM Production.Product               -- sistema devolveu o resultado com itens somente entre os dois valores.
+WHERE Weight > 500 and Weight < 700
+
+
+
+ /*
 
 Foi pedido pelo marketing uma relação de todos os empregados (employes)
 que são casados (married) e asaláriados (salaried):
@@ -70,7 +79,7 @@ R:
 */
 
 
-SELECT *                                             ----> Foi listado todos os empregados casados com a referência 'M'
+SELECT *                                             --> Foi listado todos os empregados casados com a referência 'M'
 FROM HumanResources.Employee                         -- que significa 'married' e a referência '0' questões binárias
 WHERE MaritalStatus = 'M' and SalariedFlag = '0'     -- significa positivo (são assalariados).
 
@@ -84,12 +93,9 @@ uma cobrança:
 
 SELECT *
 FROM person.person
-WHERE LastName = 'krebs' and FirstName = 'Peter'  -- Com o codigo em questão, foi listado mais detalhes sobre o empregado
-                                                  -- com uma referência '26'.
+WHERE LastName = 'krebs' and FirstName = 'Peter'  --> Com o codigo em questão, foi listado mais detalhes sobre o empregado
+                                                  --  com uma referência '26'.
 
 SELECT *
 FROM person.EmailAddress
-WHERE EmailAddressID = '26'                       -- A referência '26' discrimina o email do empregado.
-
--- Pesquisamos pelo nome e sobrenome do cliente, e la coletamos a informação do ID, assim batendo todas as outras informações.
-
+WHERE EmailAddressID = '26'                       --> A referência '26' discrimina o email do empregado.
