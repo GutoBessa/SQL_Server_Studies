@@ -67,6 +67,16 @@ que são casados (married) e asaláriados (salaried):
 
 R:
 
+*/
+
+
+SELECT *                                             ----> Foi listado todos os empregados casados com a referência 'M'
+FROM HumanResources.Employee                         -- que significa 'married' e a referência '0' questões binárias
+WHERE MaritalStatus = 'M' and SalariedFlag = '0'     -- significa positivo (são assalariados).
+
+
+
+/*
 Um usuário chamado Peter Krebs está devendo um pagamento, consiga o email dele para que possamos enviar 
 uma cobrança:
 
