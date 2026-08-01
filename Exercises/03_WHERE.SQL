@@ -23,7 +23,7 @@ OR               OPERADOR LÓGICO OU
 
 /*
 Selecionar grupo de dados especificos de uma coluna, sobrenome "miller", retornando
--- mais de um dado com seus componentes, veja o exemplo:
+mais de um dado com seus componentes, veja o exemplo:
 
 */
 SELECT *
