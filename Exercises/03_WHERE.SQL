@@ -84,11 +84,12 @@ uma cobrança:
 
 SELECT *
 FROM person.person
-WHERE LastName = 'krebs' and FirstName = 'Peter'
+WHERE LastName = 'krebs' and FirstName = 'Peter'  -- Com o codigo em questão, foi listado mais detalhes sobre o empregado
+                                                  -- com uma referência '26'.
 
 SELECT *
 FROM person.EmailAddress
-WHERE EmailAddressID = '26'
+WHERE EmailAddressID = '26'                       -- A referência '26' discrimina o email do empregado.
 
 -- Pesquisamos pelo nome e sobrenome do cliente, e la coletamos a informação do ID, assim batendo todas as outras informações.
 
