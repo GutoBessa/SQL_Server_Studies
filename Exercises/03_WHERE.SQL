@@ -57,7 +57,7 @@ que 700kg para inspeção, desenvolva a formula:
 
  R:*/
  
-SELECT *                              --> 'WHERE' foi usado como parametro entre 2 pesos distintos, assim o 
+SELECT Name                              --> 'WHERE' foi usado como parametro entre 2 pesos distintos, assim o 
 FROM Production.Product               -- sistema devolveu o resultado com itens somente entre os dois valores.
 WHERE Weight > 500 and Weight < 700
 
@@ -69,8 +69,8 @@ que são casados (married) e asaláriados (salaried):
 R:*/
 
 SELECT *                                             --> Foi listado todos os empregados casados com a referência 'M'
-FROM HumanResources.Employee                         -- que significa 'married' e a referência '0' questões binárias
-WHERE MaritalStatus = 'M' and SalariedFlag = '0'     -- significa positivo (são assalariados).
+FROM HumanResources.Employee                         -- que significa 'married' e a referência '1' questões binárias
+WHERE MaritalStatus = 'M' and SalariedFlag = '1'     -- significa positivo (são assalariados).
 
 /*
 Um usuário chamado Peter Krebs está devendo um pagamento, consiga o email dele para que possamos enviar 
