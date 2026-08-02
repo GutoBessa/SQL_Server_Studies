@@ -11,7 +11,7 @@ Este repositório contém meus estudos de SQL Server.
 - [x] SELECT
 - [x] DISTINCT
 - [x] WHERE
-- [ ] ORDER BY
+- [x] COUNT
 - [ ] GROUP BYEX
 - [ ] JOINS
 - [ ] VIEWS
