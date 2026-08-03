@@ -31,7 +31,10 @@ FROM TABELA
  R:*/
  
  
-SELECT Name                              --> 
+SELECT COUNT (*)                                    --> Aqui foi usado um "COUT" geral dentro da tabela
+FROM Production.Product                             -- Prodution.Product, devolvendo assim a somatoria de 504 linhas.
+                                                     
+                                                     
                                         
 
 /* O gerente precisa saber quantos tamanhos temos cadastrados em nossa tabela de produtos(prodution.Product):
@@ -39,7 +42,8 @@ SELECT Name                              -->
  R:*/
  
  
-SELECT Name                              --> 
+SELECT COUNT (SIZE)                                  --> Foi usado a formula "COUT" colocando a coluna 'SIZE'
+FROM Production.Product                              --  em questão para a contagem especifica da coluna.
                    
 
 
@@ -48,5 +52,6 @@ SELECT Name                              -->
  R:*/
  
  
-SELECT                                    -->  
-FROM                   
+SELECT COUNT(DISTINCT SIZE)                           --> O comando 'COUT' foi usado juntamente com o 'DISTINCT' entre
+FROM Production.Product                               --  parenteses ao lado da coluna em questão 'SIZE', assim, á
+                                                      --  devolver o valor de 18 tamanhos.
