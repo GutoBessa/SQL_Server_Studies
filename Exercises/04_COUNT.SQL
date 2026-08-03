@@ -1,9 +1,9 @@
 /*
 =========================================
-Aula 04 - COUNT
-Banco: AdventureWorks2017
-Data: 02/08/2026
-Causa e efeito: Retorna o número de linhas  .
+Class 04 - COUNT
+Database: AdventureWorks2017
+Date: 08/02/2026
+Cause and effect: Data count (rows) from a specific column of a table.
 =========================================
 */
 --COUNT Sintaxe:
@@ -11,13 +11,15 @@ Causa e efeito: Retorna o número de linhas  .
 SELECT COUNT(*)
 FROM TABELA
 
---Para contagem especifica de linhas de uma determinada coluna, descreva esse campo entre parenteses:
+-- For a specific row count of a particular column, describe this field in parentheses:
 
 SELECT COUNT(coluna1)
 FROM TABELA
 
--- Abaixo a formula retorna contagem espefica de linhas de uma coluna,
--- sendo que, esses valores, não inclui valores nulos (NULL) dessa coluna:
+/*
+-- Below, the formula returns a specific row count of a column,
+-- and these values do not include null values (NULL) or repeated values in that same column:
+*/
 
 SELECT COUNT(DISTINCT Coluna1)
 FROM TABELA
@@ -26,32 +28,31 @@ FROM TABELA
 
 -- #EXERCÍCIOS 04#
 
-/* O gerente precisa saber quantos produtos temos cadastrados em nossa tabela de produtos(prodution.Product):
+/* The manager needs to know how many products we have registered in our product table (production.Product): 
 
  R:*/
  
  
-SELECT COUNT (*)                                    --> Aqui foi usado um "COUT" geral dentro da tabela
-FROM Production.Product                             -- Prodution.Product, devolvendo assim a somatoria de 504 linhas.
+SELECT COUNT (*)                                    --> Here, a general "COUNT" was used within the table
+FROM Production.Product                             --  Production.Product, thus returning a total sum of 504 rows.
                                                      
                                                      
                                         
 
-/* O gerente precisa saber quantos tamanhos temos cadastrados em nossa tabela de produtos(prodution.Product):
+*/* The manager needs to know how many sizes we have registered in our product table (production.Product):
 
  R:*/
  
  
-SELECT COUNT (SIZE)                                  --> Foi usado a formula "COUT" colocando a coluna 'SIZE'
-FROM Production.Product                              --  em questão para a contagem especifica da coluna.
+SELECT COUNT (SIZE)                                  --> The "COUNT" formula was used, specifying the 'SIZE' column
+FROM Production.Product                              -- for the specific count of that column.
                    
 
 
-/* O gerente precisa saber quantos tamanhos diferentes de produtos temos cadastrado no sistema (prodution.Product):
-
+*/* The manager needs to know how many different product sizes we have registered in the system (production.Product):
  R:*/
  
  
-SELECT COUNT(DISTINCT SIZE)                           --> O comando 'COUT' foi usado juntamente com o 'DISTINCT' entre
-FROM Production.Product                               --  parenteses ao lado da coluna em questão 'SIZE', assim, á
-                                                      --  devolver o valor de 18 tamanhos.
+SELECT COUNT(DISTINCT SIZE)                           --> The 'COUNT' command was used together with 'DISTINCT' in
+FROM Production.Product                               -- parentheses next to the column in question 'SIZE', thus
+                                                      -- returning the value of 18 sizes.
