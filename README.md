@@ -12,7 +12,7 @@ Este repositório contém meus estudos de SQL Server.
 - [x] DISTINCT
 - [x] WHERE
 - [x] COUNT
-- [ ] GROUP BYEX
+- [x] TOP
 - [ ] JOINS
 - [ ] VIEWS
 - [ ] STORED PROCEDURES
