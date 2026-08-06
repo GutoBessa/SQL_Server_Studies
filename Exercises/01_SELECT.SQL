@@ -8,16 +8,14 @@ Causa e efeito: Selecionar a pasta e a lista, dando inicio a verificação de da
 */
 
 -- Selecionar todas as colunas
-SELECT *
-FROM Person.Person;
+SELECT (Column1, Column2, *)
+FROM table;
 
 -- Selecionar colunas específicas
 SELECT FirstName, LastName
 FROM Person.Person;
 
--- Selecionar as 10 primeiras pessoas
-SELECT TOP (10) *
-FROM Person.Person;
+
 
 /* #EXERCÍCIO 01#
 

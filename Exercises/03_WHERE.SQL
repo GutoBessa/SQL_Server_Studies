@@ -1,27 +1,27 @@
 /*
 =========================================
-Aula 03 - WHERE
-Banco: AdventureWorks2017
-Data: 29/07/2026
-Causa e efeito: Coleta de grupo dados específcos com algumas similaridades.
+Class 03 - WHERE
+Database: AdventureWorks2017
+Date: 29/07/2026
+Cause and Effect: A collection of specific data points that share certain similarities.
 =========================================
 */
 
 /*
-OPERADOR    -    DESCRIÇÃO
-=                IGUAL
->                MAIOR QUE
-<                MENOR QUE
->=               MAIOR QUE OU IGUAL
-<=               MENOR QUE OU IGUAL
-<>               DIFERENTE DE
-AND              OPERADOR LÓGICO + 
-OR               OPERADOR LÓGICO OU
+OPERATOR    -    DESCRIPTION
+=                EQUAL TO
+>                GREATER THAN
+<                LESS THAN
+>=               GREATER THAN OR EQUAL TO
+<=               LESS THAN OR EQUAL TO
+<>               NOT EQUAL TO
+AND              LOGICAL OPERATOR + 
+OR               LOGICAL OPERATOR OR
 
 
 
-Selecionar grupo de dados especificos de uma coluna, sobrenome "miller", retornando
-mais de um dado com seus componentes, veja o exemplo:
+Select specific data from a column—last name “Miller”—returning
+more than one record with its components. See the example:
 
 */
 SELECT *
@@ -29,60 +29,60 @@ FROM person.person
 WHERE LastName = 'miller'
 
 /*
-Usando o mesmo caso, digamos que queremos que o sistema procure mais detalhado, então conseguimos acresentar
-FirtName "anna", como complemento e adicionamos a pasta tambem, veja o exemplo:
+Using the same example, let's say we want the system to search in more detail, so we can add
+FirstName “anna” as a supplement and add the folder as well. See the example:
 */
 
 SELECT *
 FROM person.person
 WHERE LastName = 'miller' and FirstName = 'anna'
 
---Outro exemplo:
+--Another example:
 
 SELECT *
 FROM production.product
 WHERE color = 'blue' or color = 'black'
 
---Comparação Matematica:
+--Mathematical Comparison:
 
-SELECT *                                        --> Selecionar um grupo de dados entre dois tipo 
-FROM production.product                         -- de valores especificos usando operadores lógicos.
+SELECT *                                        --> Select a data group from two types 
+FROM production.product                         -- of specific values using logical operators.
 WHERE ListPrice > 1500 and ListPrice < 5000
 
 
--- #EXERCÍCIOS 03#
+-- #EXERCISES 03#
 
-/*A equipe de produção precisa do nome de todas as peças que tem o peso de 500kg mas não mais 
-que 700kg para inspeção, desenvolva a formula:
+/*The production team needs the names of all parts that weigh 500 kg but no more
+than 700 kg for inspection. Derive the formula:
 
  R:*/
  
-SELECT Name                              --> 'WHERE' foi usado como parametro entre 2 pesos distintos, assim o 
-FROM Production.Product               -- sistema devolveu o resultado com itens somente entre os dois valores.
+SELECT Name                              --> ‘WHERE’ was used as a parameter between two different weights, so the 
+FROM Production.Product                  --   system returned results containing only items within that range.
 WHERE Weight > 500 and Weight < 700
 
  /*
 
-Foi pedido pelo marketing uma relação de todos os empregados (employes)
-que são casados (married) e asaláriados (salaried):
+The marketing department has requested a list of all employees
+who are married and salaried:
 
 R:*/
 
-SELECT *                                             --> Foi listado todos os empregados casados com a referência 'M'
-FROM HumanResources.Employee                         -- que significa 'married' e a referência '1' questões binárias
-WHERE MaritalStatus = 'M' and SalariedFlag = '1'     -- significa positivo (são assalariados).
+SELECT *                                             --> All married employees were listed with the code 'M'
+FROM HumanResources.Employee                         --  means “married,” and the reference “1” refers to binary 
+WHERE MaritalStatus = 'M' and SalariedFlag = '1'     --  questions means positive (they are employees).
 
 /*
-Um usuário chamado Peter Krebs está devendo um pagamento, consiga o email dele para que possamos enviar 
-uma cobrança:
+A user named Peter Krebs is behind on a payment. Please get his email address so we can send
+him a payment reminder:
 
 R:*/
 
 SELECT *
 FROM person.person
-WHERE LastName = 'krebs' and FirstName = 'Peter'  --> Com o codigo em questão, foi listado mais detalhes sobre o empregado
-                                                  --  com uma referência '26'.
+WHERE LastName = 'krebs' and FirstName = 'Peter'  --> Using the code in question, additional details about the employee 
+                                                  --  with the reference number ‘26’ were listed.
 
 SELECT *
 FROM person.EmailAddress
-WHERE EmailAddressID = '26'                       --> A referência '26' discrimina o email do empregado.
+WHERE EmailAddressID = '26'                       --> The reference “26” identifies the employee's email address.
