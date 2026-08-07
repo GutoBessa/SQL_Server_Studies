@@ -13,7 +13,7 @@ Este repositório contém meus estudos de SQL Server.
 - [x] WHERE
 - [x] COUNT
 - [x] TOP
-- [ ] JOINS
+- [x] ORDER BY
 - [ ] VIEWS
 - [ ] STORED PROCEDURES
 - [ ] FUNCTIONS
