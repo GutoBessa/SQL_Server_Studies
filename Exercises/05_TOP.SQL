@@ -1,6 +1,6 @@
 /*
 =========================================
-Class 04 - TOP
+Class 05 - TOP
 Database: AdventureWorks2017
 Date: 05/08/2026
 Cause and effect: Select the first numbers in the order of their placement in the column.
