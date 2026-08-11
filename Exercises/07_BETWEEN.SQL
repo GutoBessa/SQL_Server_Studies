@@ -22,7 +22,7 @@ WHERE Coluna1 NOT BETWEEN 'parameter1' and 'parameter2'
 
 -- #EXERCÍCIOS 07#
 
-/* Ogerente precisa saber o nome das peças que estão em estoque, mas apenas as peças que tem a quantidade entre 500 e 800.
+/* The manager needs to know the names of the parts in stock, but only those with quantities between 500 and 800.
 R:*/
 
 SELECT Name, SafetyStockLevel
