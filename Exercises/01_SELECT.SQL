@@ -1,6 +1,6 @@
 /*
 =========================================
-Less 01 - SELECT
+Lesson 01 - SELECT
 Database: AdventureWorks2017
 Date: 25/07/2026
 Cause and effect: Select the folder and the list to begin verifying the data.
