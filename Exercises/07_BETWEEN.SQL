@@ -1,6 +1,6 @@
 /*
 =========================================
-Less 07 - BETWEEN
+Lesson 07 - BETWEEN
 Database: AdventureWorks2017
 Date: 10/08/2026
 Cause and effect: Find values between two parameters.
