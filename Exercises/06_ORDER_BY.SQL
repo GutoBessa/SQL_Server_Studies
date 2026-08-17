@@ -1,6 +1,6 @@
 /*
 =========================================
-Class 06 - Order By
+Lesson 06 - Order By
 Database: AdventureWorks2017
 Date: 07/08/2026
 Cause and effect: Organization the lines of table in ascen/descres .
