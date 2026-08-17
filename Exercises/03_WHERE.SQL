@@ -1,6 +1,6 @@
 /*
 =========================================
-Class 03 - WHERE
+Lesson 03 - WHERE
 Database: AdventureWorks2017
 Date: 29/07/2026
 Cause and Effect: A collection of specific data points that share certain similarities.
