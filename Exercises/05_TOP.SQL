@@ -3,7 +3,8 @@
 Lesson 05 - TOP
 Database: AdventureWorks2017
 Date: 05/08/2026
-Cause and effect: Select the first numbers in the order of their placement in the column.
+Cause and effect: Select the first ten records, not necessarily in the order 
+in which they were inserted into the table or sorted (ascending/descending).
 =========================================
 */
 --TOP Sintaxe:
