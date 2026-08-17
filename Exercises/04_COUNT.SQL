@@ -1,6 +1,6 @@
 /*
 =========================================
-Class 04 - COUNT
+Lesson 04 - COUNT
 Database: AdventureWorks2017
 Date: 08/08/2026
 Cause and effect: Data count (rows) from a specific column of a table.
