@@ -1,6 +1,6 @@
 /*
 =========================================
-Less 08 - LIKE
+Lesson 08 - LIKE
 Database: AdventureWorks2017
 Date: 11/08/2026
 Cause and effect: Find files with incomplete information.
