@@ -14,10 +14,10 @@ Este repositório contém meus estudos de SQL Server.
 - [x] COUNT
 - [x] TOP
 - [x] ORDER BY
-- [ ] VIEWS
-- [ ] STORED PROCEDURES
-- [ ] FUNCTIONS
-- [ ] TRIGGERS
+- [x] BETWEEN
+- [x] LIKE
+- [x] IN
+- [ ] MIN,MAX,SUM,AVG
 
 ## Objetivo
 

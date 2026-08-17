@@ -19,4 +19,4 @@ FROM Person.Person;
     LastName: 1206
   */
 SELECT DISTINCT LastName
-FROM Person.Person; -
+FROM Person.Person; 
