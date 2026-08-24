@@ -12,7 +12,7 @@ in which they were inserted into the table or sorted (ascending/descending).
 SELECT TOP /*0*/ (COLUNA)
 FROM TABELA
 
--- To select the first 10 rows:
+-- To select the 10 rows:
 
 SELECT TOP 10 (*)
 FROM Production.Product
