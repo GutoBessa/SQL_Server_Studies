@@ -17,7 +17,9 @@ Este repositório contém meus estudos de SQL Server.
 - [x] BETWEEN
 - [x] LIKE
 - [x] IN
-- [ ] MIN,MAX,SUM,AVG
+- [x] MIN,MAX,SUM,AVG
+- [x] GROUP BY
+
 
 ## Objetivo
 
