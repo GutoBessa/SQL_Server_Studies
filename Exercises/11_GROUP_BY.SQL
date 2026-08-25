@@ -10,12 +10,12 @@ allowing you to apply aggregate functions (SUM, COUNT, AVG, MAX, MIN) to each gr
 
 -- GROUP BY :
 
-SELECT Coluna1, /*SUM,MIN,AVG,MAX*/ SUM (Coluna2) AS "DESCRIÇÃO DA NOVA COLUNA RESULTADO"
+SELECT Coluna1, /*SUM,MIN,AVG,MAX*/ SUM (Coluna2) AS "DESCRIPTION OF THE NEW “RESULT” COLUMN"
 FROM TABELA
 GROUP BY Coluna1
 
 -- EXEMPLE :
 
-SELECT SalesOrderID, SUM(SalesOrderDetailID) AS "QUANTIDADE TOTAL"  --> Selecione as duas colunas que resultará no calculo
-FROM Sales.SalesOrderDetail                                         --  correspondente e na construção de uma nova com a
-GROUP BY SalesOrderID                                               --  descrição entre parenteses.
+SELECT SalesOrderID, SUM(SalesOrderDetailID) AS "TOTAL QUANTITY" --> Select the two columns that will result in the
+FROM Sales.SalesOrderDetail                                      --  corresponding calculation and the creation of a new 
+GROUP BY SalesOrderID                                            --  column with the description in parentheses.
