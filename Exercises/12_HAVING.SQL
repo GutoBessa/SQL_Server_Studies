@@ -3,21 +3,21 @@
 Less 12 - HAVING
 Database: AdventureWorks2017
 Date: 21/08/2026
-Cause and effect: filtragem extra sobre dados, agrupados com a nova coluna criada. 
+Cause and effect: Additional filtering of data, grouped by the newly created column.
 =========================================
 */
 
 -- HAVING :
 
-SELECT Coluna1, COUNT(Coluna1) AS "DESCRIPTION OF THE NEW “RESULT” COLUMN" --> Coluna foi criada com uma nova base de  
-FROM TABELA                                                                --  de calculo agrupada, em seguida foi imposta 
-GROUP BY Coluna1                                                           --  uma nova condição de agrutinação em cima da
-HAVING COUNT (Coluna1) > 10                                                --  coluna criada.
+SELECT Coluna1, COUNT(Coluna1) AS "DESCRIPTION OF THE NEW “RESULT” COLUMN" --> The column was created using a new database of  
+FROM TABELA                                                                --  grouped calculation, which was then applied 
+GROUP BY Coluna1                                                           --  a new agglutinative condition based on the
+HAVING COUNT (Coluna1) > 10                                                --  Column created.
 
 -- #EXERCÍCIOS 12#
 
-/* O recursos humanos precisa saber quais são os funcionários que tem mais de um email promocional na conta da empresa
-e precisa da relação dos sobre nomes:
+/* Human Resources needs to know which employees have more than one promotional email address associated with their
+company account and needs a list of their last names:
 */
 R:  
 
