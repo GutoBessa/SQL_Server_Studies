@@ -21,7 +21,7 @@ company account and needs a list of their last names:
 */
 R:  
 
-SELECT LastName, COUNT (LastName) as "QUANTIDADE"
+SELECT LastName, COUNT (LastName) as "QTD"
 From Person.Person
 GROUP BY LastName
 HAVING COUNT (LastName) = 2
