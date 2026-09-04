@@ -22,4 +22,21 @@ INNER JOIN TABELA2 T2 ON T2.COLUNAID = T1.COLUNAID --  (T1 - Dados extraidos da 
                                                    --  as duas tabelas, selecionamos a 'TABELA2' em seguida do comando
                                                    -- 'ON', identificamos as duas chaves primárias de interligação que
                                                    --  é a 'COLUNAID' (Ambas obtem os mesmos dados de identificação).
+
+-- #EXERCÍCIOS 14#
+
+/* O setor de recursos humanos precisa reorganizar em uma nova tabela, os nomes e sobrenomes dos funcionários com seus
+respectivos endereços de email:
+*/
+R:  
+
+SELECT *
+FROM person.person
+
+SELECT *
+FROM Person.EmailAddress
+
+SELECT PC1.MiddleName, PC1.FirstName, PC2.EmailAddress
+FROM Person.person PC1
+INNER JOIN Person.EmailAddress PC2 ON PC2.BusinessEntityID = PC1.BusinessEntityID 
                                                
