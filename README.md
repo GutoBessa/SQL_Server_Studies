@@ -20,6 +20,7 @@ Este repositório contém meus estudos de SQL Server.
 - [x] MIN,MAX,SUM,AVG
 - [x] GROUP BY
 - [x] HAVING
+- [x] INNER JOIN
 
 
 ## Objetivo
