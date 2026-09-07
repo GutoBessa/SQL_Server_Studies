@@ -21,6 +21,7 @@ Este repositório contém meus estudos de SQL Server.
 - [x] GROUP BY
 - [x] HAVING
 - [x] INNER JOIN
+- [x] UNION
 
 
 ## Objetivo

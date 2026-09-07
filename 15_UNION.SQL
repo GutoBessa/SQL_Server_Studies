@@ -1,10 +1,10 @@
 /*
 =========================================
-Less 15 - OUTER JOIN
+Less 15 - UNION
 Database: AdventureWorks2017
-Date: 06/09/2026
-Cause and effect: Combining information from other tables.
+Date: 07/09/2026
+Cause and effect: 
 =========================================
 
 
--- OUTER JOIN :
+-- UNION :
