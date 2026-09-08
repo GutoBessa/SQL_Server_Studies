@@ -12,9 +12,9 @@ Cause and effect: Emigrar informações em simultâneo de duas ou mais tabelas.
 
 SELECT Coluna1, Coluna2, Coluna3     -- O 'UNION' mescla informações da coluna na 'tabela1' com a coluna da 
 FROM TABELA1                         -- 'tabela2' imprimindo assim resultados correspondentes á escolha do usuário
-WHERE Coluna2 like %informações%     -- juntando assim em uma mesma tabela.
-UNION
-SELECT Coluna1, Coluna2, Coluna3
+WHERE Coluna2 like %informações%     -- juntando assim em uma mesma tabela, normalmente, como há mais de dois parametros
+UNION                                -- as informações podem emigrar junto com um agregado que não atenda os três mas atenda 
+SELECT Coluna1, Coluna2, Coluna3     -- aos dois.
 FROM TABELA2
 WHERE Coluna2 like %informações2%
 
