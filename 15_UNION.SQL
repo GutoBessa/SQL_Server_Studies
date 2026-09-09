@@ -3,25 +3,24 @@
 Less 15 - UNION
 Database: AdventureWorks2017
 Date: 07/09/2026
-Cause and effect: Emigrar informações em simultâneo de duas ou mais tabelas.
+Cause and effect: Merge data from two or more tables into a single table.
 =========================================
 */
 
 
 -- UNION :
 
-SELECT Coluna1, Coluna2, Coluna3     -- O 'UNION' mescla informações da coluna na 'tabela1' com a coluna da 
-FROM TABELA1                         -- 'tabela2' imprimindo assim resultados correspondentes á escolha do usuário
-WHERE Coluna2 like %informações%     -- juntando assim em uma mesma tabela, normalmente, como há mais de dois parametros
-UNION                                -- as informações podem emigrar junto com um agregado que não atenda os três mas atenda 
-SELECT Coluna1, Coluna2, Coluna3     -- aos dois.
-FROM TABELA2
-WHERE Coluna2 like %informações2%
+SELECT Colun1, Colun2, Colun3     -- The ‘UNION’ operation combines data from the column in ‘table1’ with the column  
+FROM TABELA1                         -- in ‘table2,’ thereby printing results that correspond to the user's
+WHERE Colun2 like %informações%     -- selection and combining them into a single table. Typically, since there are
+UNION                                -- more than two parameters the data may be included along with an aggregate that 
+SELECT Colun1, Colun2, Colun3     -- does not meet all three criteria but does meet two of them.
+WHERE Colun2 like %informações2%
 
--- #EXERCÍCIOS 15#
+-- #EXERCISE 15#
 
-/* O Recursos humanos precisa da relação TOP 5 de todos os funcionários que tem o titulo de 'Mr' e qual deles tem '0'
-emails no banco de dados da tabela Person.person em ordem desc.
+/* Human Resources needs a list of the top 5 employees who have the title “Mr.” and which of them has “0”
+emails in the Person.person table in the database, in descending order.
 */
 R:  
 
