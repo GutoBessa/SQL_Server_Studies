@@ -24,6 +24,7 @@ Este repositório contém meus estudos de SQL Server.
 - [x] UNION
 
 
+
 ## Objetivo
 
 Praticar SQL Server e registrar minha evolução para compor meu portfólio no GitHub.
