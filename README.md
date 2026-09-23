@@ -22,6 +22,7 @@ Este repositório contém meus estudos de SQL Server.
 - [x] HAVING
 - [x] INNER JOIN
 - [x] UNION
+- [x] SELF JOIN
 
 
 
