@@ -23,6 +23,7 @@ Este repositório contém meus estudos de SQL Server.
 - [x] INNER JOIN
 - [x] UNION
 - [x] SELF JOIN
+- [x] SUBQUERY
 
 
 
