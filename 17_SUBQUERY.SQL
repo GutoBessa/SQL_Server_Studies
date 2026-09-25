@@ -22,26 +22,24 @@ SELECT *
 FROM Production.product            -- Resultado: Listagem dos produtos que estão com essa média maior que 438.66.
 WHERE ListPrice > 438.66
 
--- No caso precisariamos realizar dois 'SELECT' para chegar no resultado esperado, mas há outra forma mais pratica 
--- para isso e mais resumida, usando o 'SUBQUERY, faremos o mesmo, apenas juntando ambos em uma unica estrutura:
+/* No caso precisariamos realizar dois 'SELECT' para chegar no resultado esperado, mas há outra forma mais pratica 
+e resumida para isso, usando o 'SUBQUERY, faremos o mesmo, apenas juntando ambos em uma unica estrutura, 
+o caso referido pede a necidade de criar uma tabela que calcule a media baseada na propria tabela, a partir desse 
+resultado é preciso também que se calcule  os produtos de venda acima da propria média anteriormente calculada,
+ou seja, é preciso duas operações de 'SELECT' dentro da mesma estrutura.
+*/
 
 SELECT *
 FROM Production.product
 WHERE ListPrice > 438.66 (SELECT AVG (ListPrice) FROM Production.product)
 
+-- O resultado de ambas querys será o mesmo, porém com um codigo mais limpo e estruturado na situação anterior.
 
+-- #EXERCISE 17#
 
-
-
-
-
-
-
-
-* Obs: Exercicio pede a necidade de criar uma tabela que calcule a media baseada na propria tabela, a partir desse resultado
-é preciso também que se calcule  os produtos de venda acima da propria média, ou seja, é preciso duas operações de 'SELECT'
-dentro da mesma estrutura
+/* 
 */
+R:  
 
 
 
