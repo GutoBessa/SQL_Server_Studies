@@ -3,43 +3,49 @@
 Less 17 - SUBQUERY
 Database: AdventureWorks2017
 Date: 23/09/2026
-Cause and effect: Tem a finalidade de contruir uma query bem mais estruturada e rápida.
+Cause and effect: Its purpose is to create a much more structured and faster query.
 =========================================
 */
 
--- EXEMPLO:
+-- EXAMPLE:
 
-/* Monte um relatório de todos os produtos cadastrados que tem preço de venda acima da média:
+/* Generate a report of all registered products with a sales price above the average:
 
--- Para calcular a media total:
+   To calculate the total average:
 */
-SELECT AVG(ListPrice)              -- Resultado: 438.662
+SELECT AVG(ListPrice)              -- Result: 438.662
 From Production.product
 
--- Para calcular produtos acima da média:
+-- To calculate above-average products:
 
 SELECT *
-FROM Production.product            -- Resultado: Listagem dos produtos que estão com essa média maior que 438.66.
+FROM Production.product            -- Result: A list of products with an average greater than 438.66.
 WHERE ListPrice > 438.66
 
-/* No caso precisariamos realizar dois 'SELECT' para chegar no resultado esperado, mas há outra forma mais pratica 
-e resumida para isso, usando o 'SUBQUERY, faremos o mesmo, apenas juntando ambos em uma unica estrutura, 
-o caso referido pede a necidade de criar uma tabela que calcule a media baseada na propria tabela, a partir desse 
-resultado é preciso também que se calcule  os produtos de venda acima da propria média anteriormente calculada,
-ou seja, é preciso duas operações de 'SELECT' dentro da mesma estrutura.
+/* In this case, we would need to run two ‘SELECT’ statements to get the expected result, but there is another, more practical
+and concise way to do this: using a ‘SUBQUERY,’ we can achieve the same result by combining both into a single structure.
+The scenario described requires creating a table that calculates the average based on the table itself; from this
+result, we also need to calculate  the sales figures for products above the previously calculated average,
+that is, two ‘SELECT’ operations are required within the same structure.
 */
 
 SELECT *
 FROM Production.product
 WHERE ListPrice > 438.66 (SELECT AVG (ListPrice) FROM Production.product)
 
--- O resultado de ambas querys será o mesmo, porém com um codigo mais limpo e estruturado na situação anterior.
+-- The result of both queries will be the same, but the code in the previous example is cleaner and more structured.
 
 -- #EXERCISE 17#
 
 /* 
+The manager needs to know exactly how many items are in stock, without duplicates; he needs to know the
+exact number and description of each one.
 */
 R:  
+
+SELECT *
+FROM Production.product
+WHERE SafetyStockLevel > 500 (SELECT COUNT(DISTINCT ReorderPoint) FROM Production.product)
 
 
 
