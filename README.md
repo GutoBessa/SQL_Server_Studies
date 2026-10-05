@@ -24,6 +24,8 @@ Este repositório contém meus estudos de SQL Server.
 - [x] UNION
 - [x] SELF JOIN
 - [x] SUBQUERY
+- [x] DATEPART
+- [x] STRING CHANGE
 
 
 
