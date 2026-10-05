@@ -9,21 +9,24 @@ Cause and effect: This function returns an integer representing the specified da
 
 -- EXAMPLE:
 
-SELECT COLUNA1, DATEPART(MONTH, COLUNADATA1) AS MÊS   -- Foi selecionado uma coluna qualquer 'COLUNA1', em seguida 
-FROM TABELA1                                          -- usamos a função 'DATEPART' dentro de uma coluna no formato de 
-                                                      -- datas, para apenas localizar o 'MONTH', retornando o resultado assim 
-                                                      -- em uma nova coluna, nomeada como 'MÊS'.
-
---Obs: Em 'DATEPART' é possivel extrair-se ano, mês, dia, entre outras informações com essa função, basta que se troque 
---a palavra 'MONTH'.
+SELECT COLUNA1, DATEPART(MONTH, COLUNADATA1) AS MÊS   -- We selected a random column named ‘COLUMN1’, then 
+FROM TABELA1                                          -- used the ‘DATEPART’ function on a column containing  
+                                                      -- dates to extract only the ‘MONTH’, returning the result in 
+                                                      -- a new column named ‘MONTH’.
+/*
+Note: With the ‘DATEPART’ function, you can extract the year, month, day, and other information; all you have to do is replace
+the word ‘MONTH’.
+*/
 
 -- #EXERCISE 18#
 
 /* 
-A matriz da loja no Brasil, precisa de um relatorio com todos tipos de cartões de credito que fizeram compra no 
-departamento, juntamente com o ano em que foi validada a compra:
+The store's headquarters in Brazil needs a report listing all types of credit cards used to make purchases in the
+department in 2008:
 */
 R:  
+
 SELECT CardType, DATEPART(YEAR, ModifiedDate) AS ANO
-FROM Sales.CreditCard
-ORDER BY ANO
+FROM Sales.CreditCard 
+WHERE ModifiedDate like '%2008%'
+ORDER BY ANO 
