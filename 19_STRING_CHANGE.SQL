@@ -9,37 +9,37 @@ Cause and effect: Change caracter of string on the table.
 
 /* EXAMPLE: 
 
-CONCAT - Usado para concatenar conteudo de uma coluna com a outra, por exemplo, para juntar uma coluna de
-'FirstName' com uma coluna de 'LastName', com numero de argumentos ilimitados, podendo assim concatenar mais
-de dois componentes, também permiti a introdução de caracteres:
+CONCAT - Used to concatenate the contents of one column with another; for example, to combine a
+‘FirstName’ column with a ‘LastName’ column. It accepts an unlimited number of arguments, allowing you to concatenate more
+than two components. It also allows you to insert characters:
 */
 SELECT CONCAT(FirstName, ' ', LastName)
 FROM Person.person
 /*
-UPPER - Usado para transformar a string tudo em letras maiusculas:
+UPPER - Used to convert the string “tudo” to all uppercase letters:
 */
 SELECT UPPER (FirstName)
 FROM Person.person
 /*
-LOWER- Usado para transformar a string em letras minusculas:
+LOWER — Used to convert a string to lowercase:
 */
 SELECT LOWER (FirstName)
 FROM Person.person
 /*
- LEN - Usado para contagem de caracteres que uma string tem:
+ LEN - Used to count the number of characters in a string:
 */
 SELECT LEN (FirstName)
 FROM Person.person
 /* 
-SUBSTRING - Usado para estração de strings por cordenada, a primera será o inicio da extração, e a segunda será 
-o final:
+SUBSTRING - Used to extract strings by coordinate; the first coordinate is the start of the extraction, and the second is
+the end:
 */
 SELECT SUBSTRING (FirstName, 1, 2)
 FROM Person.person
 /* 
-REPLACE - Usado para substituir string, a função usará três parametros que são, o primeiro, 
-representa 'Coluna', o segundo, representa qual string será substituida na coluna, e o terceiro, por qual 
-string será substituido:
+REPLACE - Used to replace a string; the function takes three parameters: the first
+represents the ‘Column’, the second represents the string to be replaced in the column, and the third represents the
+string it will be replaced with:
 */
 SELECT REPLACE(ProductNumber,'-','x')
 FROM Production.Product
