@@ -7,4 +7,4 @@ Cause and effect: Change caracter of string on the table.
 =========================================
 */
 
-/* EXAMPLE: 
+/* EXAMPLE:
