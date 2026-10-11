@@ -9,9 +9,9 @@ Cause and effect: Change caracter of string on the table.
 
 /* EXAMPLE:
 
-Há infinitas funcões matematicas, mais aqui so será exposto as dprincipais xe mais usadas, para ter acesso as 
-outras funções basta pesquisar sobre 'Funções matematicas SQL Server'.Realizar operações matematicas é muito 
-subjetivo e facil, as mais conhecidas são:
+There are countless mathematical functions, but here we will only cover the main and most commonly used ones. To access the
+other functions, simply search for “SQL Server mathematical functions.” Performing mathematical operations is very
+straightforward and easy; the most well-known ones are:
 */
 
 --SOMA:
@@ -19,32 +19,32 @@ subjetivo e facil, as mais conhecidas são:
 SELECT UnitPrice + LineTotal
 FROM Sales.SalesOrderDetail
 
---Subtração:
+--Subtraction:
 
 SELECT UnitPrice - LineTotal
 FROM Sales.SalesOrderDetail
 
---Multiplicação:
+--Multiplication:
 
 SELECT UnitPrice * LineTotal
 FROM Sales.SalesOrderDetail
 
---Divisão:
+--Division:
 
 SELECT UnitPrice / LineTotal
 FROM Sales.SalesOrderDetail
 
---Arredondamento de valores:
+--Rounding of numbers:
 
-SELECT ROUND(LineTotal,2)           -- > 2 parâmetros; 1)coluna de onde será extraida a informação, 2)precisão decimal
-FROM Sales.SalesOrderDetail         -- do arredondamento.
+SELECT ROUND(LineTotal,2)           -- > Two parameters: 1) the column from which the information will be extracted,
+FROM Sales.SalesOrderDetail         -- 2) the decimal precision for rounding.
 
---Raiz quadrada:
+--Square root:
 
 SELECT SQRT(LineTotal)
 FROM Sales.SalesOrderDetail
 
---Média:
+--Average:
 
 SELECT AVG(LineTotal)
 FROM Sales.SalesOrderDetail
