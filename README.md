@@ -26,6 +26,7 @@ Este repositório contém meus estudos de SQL Server.
 - [x] SUBQUERY
 - [x] DATEPART
 - [x] STRING CHANGE
+- [x] MATHEMATICAL FUNCTIONS
 
 
 
