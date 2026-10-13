@@ -1,34 +1,33 @@
-# TIPOS DE DADOS EM SQL
+# DATA TYPES IN SQL
 
-1. Boleanos
-2. Caractere
-3. Númericos
-4. Tsemporais
+1. Booleans
+2. Characters
+3. Numeric
+4. Date and Time
 
-# 1. Boleanos
-Por padrão ele é inicializado como nulo, e pode receber tanto 1 ou 0 BIT.
+# 1. Booleans
+By default, it is initialized as NULL and can hold either 1 or 0 bits.
 
-# 2. Caracteres
-Tamanho fixo - char // Permite inserir até uma qualidade fixa de caracteres e sempre ocupa todo o espaço reservado
-10/50 tamanhos variáveis - varchar ou nvarchar // permite inserir até a quantidade que for definida, porém so usa o espaço que for preenchido 10/50.
+# 2. Characters
+Fixed length - char // Allows insertion of up to a fixed number of characters and always occupies the entire reserved space
+Variable length (10/50) - varchar or nvarchar // Allows insertion of up to the defined length, but only uses the space that is actually filled (10/50).
 
-# 3. Númericos
-# Valores Exatos
-1. TINYINT - Não tem parte de valores fracionados (ex: 1.43, 24.23) somente 1,123123, 3242344, 313123.
-2. SMALLINT / INT / BIGINT- Mesma teoria do TINYINT mas o limite é maior.
-3. NUMERIC ou DECIMAL - Valores exatos, porém permite ter partes fracionadas, que também pode ser especificado a precisão e escala (escala é o número de digitos na parte fracional) ex: NUMERIC: 5,2 ; 113,4
+# 3. Numeric
+# Exact Values
+1. TINYINT - Has no fractional part (e.g., 1.43, 24.23); only 1.123123, 3242344, 313123.
+2. SMALLINT / INT / BIGINT - Same concept as TINYINT, but with a higher limit.
+3. NUMERIC or DECIMAL—Exact values, but they allow for fractional parts; precision and scale can also be specified (scale is the number of digits in the fractional part). Example: NUMERIC: 5.2; 113.4
 
-# Valores Aproximados 
-1. REAL - Tem precisão aproximada de até 15 digitos
-2. FLOAT - Tem precisão aproximada de até 15 digitos
+# Approximate Values
+1. REAL—Has approximate precision of up to 15 digits
+2. FLOAT - Has an approximate precision of up to 15 digits
 
-# 4. Temporais
-DATE - Armazena data no formato ano, mês e dia (aaaa/mm/dd).
-DATETIME - Armazena data e hora juntos (aaaa/mm/dd:hh:mm:ssssss).
-DATETIME2 - Data e horas com adição de milissegundos (aaaa/mm/dd:hh:mm:sssssss).
-SMALLDATETIME - Data e hora sempre respeitando o limite entre '1999-01-01:00:00:00' até '2079-06-06:23:59:59'.
-TIME - Horas, minutos, segundos, e milissegundos respeitando o limite de '00:00:00.000000' até '23:59:59.9999999'.
-DATETIMEOFFSET - Permite armazenar informações de data e horas incluindo o fuso horário.
-
+# 4. Date and Time
+DATE - Stores the date in the year, month, and day format (yyyy/mm/dd).
+DATETIME - Stores the date and time together (yyyy/mm/dd:hh:mm:ssssss).
+DATETIME2 - Date and time with milliseconds included (yyyy/mm/dd:hh:mm:sssssss).
+SMALLDATETIME - Date and time always within the range from ‘1999-01-01:00:00:00’ to ‘2079-06-06:23:59:59’.
+TIME - Hours, minutes, seconds, and milliseconds within the range from ‘00:00:00.000000’ to ‘23:59:59.9999999’.
+DATETIMEOFFSET - Allows you to store date and time information
 
 
