@@ -1,18 +1,18 @@
-## Chave primária e estrangeira
+## Primary and foreign keys
 
->O que é uma chave estrangeira?
-* Uma chave estrangeira é uma coluna ou grupo de colunas em uma tabela que identifica unicamente uma linha em outra tabela.
+>What is a foreign key?
+* A foreign key is a column or group of columns in a table that uniquely identifies a row in another table.
 
-* Ou seja, uma chave estrangeira é definada em uma tabela onde ela é apenas uma referência e não contém todos os dados ali.
+* In other words, a foreign key is defined in a table where it serves only as a reference and does not contain all the data from that table.
 
-* Uma chave estrangeira é simplismente uma coluna ou grupo de colunas que é uma chave primaria em outra tabela.
+* A foreign key is simply a column or group of columns that serves as a primary key in another table.
 
-* A tabela que contém uma chave estrangeira é chamada de tabela de referênciadora ou tabela filho, e a tabela na qual a chave estrangeira é referenciada é chamada de tabela referência ou tabela pai.
+* A table that contains a foreign key is called a referenced table or child table, and the table to which the foreign key refers is called a reference table or parent table.
 
-* Uma tabela pode ter mais de uma chave estrangeira dependendo do seu relacionamento com as outras tabelas.
+* A table can have more than one foreign key, depending on its relationship with other tables.
 
-* No SQL Server você define uma chave estrangeira atraves de uma 'Foreign Key Constraint' ou restrição de chave estrangeira.
+* In SQL Server, you define a foreign key using a “Foreign Key Constraint.”
 
-* Uma restrição de chave estrangeira indica que os valores em uma coluna ou grupo de colunas na tabela filho correspondem os valores na tabela pai.
+* A foreign key constraint specifies that the values in a column or group of columns in the child table correspond to the values in the parent table.
 
-* Nos podemos entender que uma chave estrangeira matem a 'Integridade referencial'.
+* We can understand that a foreign key ensures “referential integrity.”
