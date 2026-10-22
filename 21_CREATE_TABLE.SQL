@@ -9,19 +9,21 @@ Cause and effect: CREATE TABLE ON SQL.
 
 /* EXAMPLE:
 
-Para criação de tabale é muito simples e rápido, porém é importante saber que há restrições em algumas situações para 
-que seja criada algumas tabelas, as principais são;
+Creating tables is very simple and quick, but it’s important to know that there are restrictions in some situations regarding 
+the creation of certain tables; the main ones are:
 
-* NOT NULL - Não permite nulos;
-* UNIQUE - Força que, em todos os valores em uma coluna, sejam diferentes.
-* PRIMARY KEY - Uma junção de NOT NULL e UNIQUE;
-* FOREIGN KEY - Identifica unicamente uma linha em outra tabela;
-* CHECK - FORÇA uma condição específica em uma coluna;
-* DEFAULT - Força um valor padrão quando nenhum valor é passado.
+* NOT NULL - Does not allow null values;
+* UNIQUE - Ensures that all values in a column are unique.
+* PRIMARY KEY - A combination of NOT NULL and UNIQUE;
+* FOREIGN KEY - Uniquely identifies a row in another table;
+* CHECK - Enforces a specific condition on a column;
+* DEFAULT - Sets a default value when no value is provided.
 
-* Para criação de duas tabela como referencia, nesse caso, iremos criar um novo banco de dados, chamado 'YouTube', aonde, dentro dele, na 
-pasta chamada 'Table', iremos criar a referida tabela:
+* To create two tables as references, in this case, we will create a new database called ‘YouTube,’ and within it, in the 
+folder named ‘Table,’ we will create the aforementioned table:
 */
+
+
 
 CREATE TABLE Canal (
 Canalid INT PRIMARY KEY,
