@@ -41,5 +41,5 @@ Deslikes INT DEFAULT 0,
 Duração INT NOT NULL,
 CanalId INT FOREIGN KEY REFERENCES Canal (CanalId));
 
--- Foram criadas duas tabelas, aonde a tabela 'Canal' tem uma relação com a segunda tabela 'Video'.
+-- Two tables were created; the “Channel” table has a relationship with the second table, “Video.”
 
