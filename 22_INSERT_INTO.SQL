@@ -25,7 +25,14 @@ VALUES (1, 'aula1'),(2, 'aula2'),(3, 'aula3');     -- depois, especificamos em p
                                                    -- respeitando a especificação de cada uma, desda criação de tabela 
                                                    -- e seguindo a ordem de colunas no 'INSERT INTO'.
 
+-- Para alteração de dados;
 
+UPDATE Tabela1                                     -- Aqui selecionamos a tabela com 'UPDATE', em seguida, selecionamos 
+SET NOME = 'Aula03'                                -- a coluna 'NOME' que sera alterada, colocamos a alteração entre 
+WHERE ID = 3                                       -- aspas, em 'WHERE',especificamos a linha , nos orientando pela 
+                                                   -- PRIMARY KEY da linha 'ID', para alteração total da coluna não é 
+                                                   -- preciso especificar com 'WHERE', basta apenas terminar a query em 
+                                                   -- 'SET'.
 
 
 
